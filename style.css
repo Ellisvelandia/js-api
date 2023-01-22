@@ -1,5 +1,89 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(241, 188, 28);
+  border-radius: 15px;
+  padding: 1em;
+}
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #1c1b1b;
+  padding: 1em;
+  border-radius: 5px;
+  margin-top: 2em;
+  border: none;
+}
+
+.currency {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#currency-one,
+#currency-two {
+  padding: 1.4em;
+}
+
+#currency-one,
+#currency-two,
+#amount-one,
+#amount-two {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0.5em;
+}
+
+.currency select {
+  appearance: none;
+  border: 1px solid #dedede;
+  font-size: 16px;
+}
+
+.currency input {
+  padding: 0.5em;
+  border: 0;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.swap-rate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate {
+  color: #000;
+  font-size: 14px;
+  padding: 0 10px;
+  margin-top: 1em;
 }
